@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">Aleksandr</div>
+        <ul>
+            <li><a href="#home" onclick="scrollToSection(0)"><span style="color: #64ffda">01.</span> Обо мне</a></li>
+            <li><a href="#experience" onclick="scrollToSection(1)"><span style="color: #64ffda">02.</span> Опыт</a></li>
+            <li><a href="#projects" onclick="scrollToSection(2)"><span style="color: #64ffda">03.</span> Работы</a></li>
+            <li><a href="#contact" onclick="scrollToSection(3)"><span style="color: #64ffda">04.</span> Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Главная секция -->
+        <section id="home" class="section active">
+            <h6>Привет, меня зовут</h2>
+            <h1>Александр</h1>
+            <h3>Я создаю вещи для веба.</h3>
+            <p>Я начинающий веб-разработчик, увлеченный созданием удобных цифровых продуктов. Работаю с HTML, CSS, JavaScript и изучаю современные фреймворки.</p>
+            <button onclick="scrollToSection(2)">Посмотреть мои проекты!</button>
+        </section>
+
+        <!-- Секция "Обо мне" -->
+        <section id="experience" class="section">
+            <h1>Обо мне</h1>
+            <p>Привет! Я начинающий веб-разработчик, увлеченный созданием современных и удобных сайтов.</p>
+        
+            <h3><i class="fas fa-briefcase"></i> Чем я занимаюсь:</h3>
+            <ul class="about-list">
+                <li><i class="fas fa-laptop-code"></i> Создаю адаптивные веб-сайты</li>
+                <li><i class="fas fa-code"></i> Работаю с JavaScript и изучаю React</li>
+                <li><i class="fas fa-paint-brush"></i> Разбираюсь в UX/UI дизайне</li>
+                <li><i class="fas fa-server"></i> Пишу backend на Node.js</li>
+            </ul>
+        
+            <h3><i class="fas fa-tools"></i> Мои технологии:</h3>
+            <div class="skills">
+                <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill"><i class="fab fa-react"></i> React</div>
+                <div class="skill"><i class="fab fa-node"></i> Node.js</div>
+                <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
+            </div>
+        </section>
+        
+
+        <!-- Секция "Проекты" -->
+        <section id="projects" class="section">
+            <h1>Мои проекты</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="blog.png" alt="Личный блог">
+                    <h3>Личный блог</h3>
+                    <p>Создал блог с публикацией статей, комментариями и авторизацией.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn github">GitHub</a>
+                        <a href="#" class="btn site">Сайт</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="store.png" alt="Интернет-магазин">
+                    <h3>Интернет-магазин</h3>
+                    <p>Разработал магазин с корзиной, фильтрами и личным кабинетом.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn github">GitHub</a>
+                        <a href="#" class="btn site">Сайт</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="portfolio.png" alt="Портфолио">
+                    <h3>Портфолио</h3>
+                    <p>Интерактивное портфолио с анимациями и динамическим контентом.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn github">GitHub</a>
+                        <a href="#" class="btn site">Сайт</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <!-- Секция "Контакты" -->
+        <section id="contact" class="section">
+            <h1>Свяжитесь со мной</h1>
+            <p>Если у вас есть вопросы или предложения, буду рад пообщаться!</p>
+            <div class="social-links">
+                <a href="#" class="btn telegram">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+                <a href="#" class="btn github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:your@email.com" class="btn email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
